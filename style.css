@@ -1,0 +1,377 @@
+html, body {
+    width: 100%;
+    height: 100%;
+    margin: 0;
+    padding: 0;
+    overflow-x: hidden;
+    background-color: #F4F4F4;
+}
+
+
+/* annimation */
+
+.fadeinleft {
+    opacity:0;
+    transform: translateX(100px);
+    transition: all 1s ease-out;
+}
+
+.fadeinright {
+    opacity: 0;
+    transform: translateX(-100px);
+    transition: all 1s ease-out;
+}
+
+.fadeindown {
+    opacity:0 ;
+    transform: translateY(-100px);
+    transition: all 1.2s ease-out;
+}
+
+.fadeinup {
+    opacity: 0;
+    transform: translateY(100px);
+    transition: all 1.2s ease-out;
+}
+
+.fade-in {
+    opacity: 0;
+    transition: all 1.3s ease-in;
+}
+
+.active-left,
+.active,
+.active-right,
+.active-down,
+.active-up {
+    opacity: 1;
+    transform: translateX(0);
+    transform: translateY(0);
+}
+
+.fadein {
+    opacity: 0;
+}
+
+
+.regular {
+    font-family: "Madimi One", sans-serif;
+    font-weight: 400;
+    font-style: normal;
+}
+
+.nova {
+    font-family: "Bona Nova", serif;
+    font-weight: 700;
+    font-style: normal;
+}
+
+.brygada {
+    font-family: "Brygada 1918", serif;
+    font-optical-sizing: auto;
+    font-weight: 600;
+    font-style: italic;
+  }
+  
+  
+.btn-1 {
+    padding: 10px 20px;
+    background-color: #BE955B;
+    border: none;
+    border-radius: 15px;
+}
+
+.btn-2 {
+    background-color: white;
+    padding: 10px 20px;
+    border: none;
+    border-radius: 15px;
+}
+
+.btn-2 a {
+    text-decoration: none;
+    color: #BE955B;
+    font-size: 17px;
+}
+
+.btn-2:hover {
+    opacity: 0.9;
+}
+.btn-1:hover {
+    opacity: 0.8;
+}
+
+.btn-1 a {
+    text-decoration: none;
+    color: white;
+    font-size: 17px;
+}
+
+#home-index {
+    background: url('img/206808.jpg') rgba(0, 0, 0, 0.35);
+    height: 80vh;
+    background-position: center;
+    background-repeat: no-repeat;
+    background-size: cover;
+    background-blend-mode:multiply;
+    background-attachment: fixed;
+}
+
+#about-index {
+    background: url('img/outdoor.jpeg') rgba(0, 0, 0, 0.35);
+    height: 80vh;
+    background-position: center;
+    background-repeat: no-repeat;
+    background-size: cover;
+    background-blend-mode:multiply;
+    background-attachment: fixed;
+}
+
+#rooms-index {
+    background: url('img/206812.jpg') rgba(0, 0, 0, 0.35);
+    height: 80vh;
+    background-position: center;
+    background-repeat: no-repeat;
+    background-size: cover;
+    background-blend-mode:multiply;
+    background-attachment: fixed;
+}
+
+#gallery-index {
+    background: url('img/488349012.jpg') rgba(0, 0, 0, 0.35);
+    background-position: center;
+    background-repeat: no-repeat;
+    background-size: cover;
+    background-blend-mode:multiply;
+    background-attachment: fixed;
+}
+
+#rooms-home .rooms-desc {
+    -webkit-box-shadow: 0px 0px 10px 5px rgba(190,149,91,1);
+    -moz-box-shadow: 0px 0px 10px 5px rgba(190,149,91,1);
+    box-shadow: 0px 0px 10px 5px rgba(190,149,91,1);
+}
+
+#rooms-home .rooms-text {
+    border: 4px solid white;
+    padding: 30px;
+    background-color: #BE955B;
+}
+
+#rooms-home .rooms-text p {
+    color: white;
+    font-size: 18px;
+}
+
+.rooms-description {
+    margin: 40px 0;
+}
+
+.rooms-description h2 {
+    color: #BE955B;
+    font-size: 40px;
+}
+
+.rooms-description h3 {
+    color: white;
+    font-size: 22px;
+    margin: 20px 0;
+}
+
+#resto-home .rest-desc h1 {
+    color: #BE955B;
+    font-size: 40px;
+} 
+
+#resto-home .rest-desc h3 {
+    color: white;
+    font-size: 24px;
+}
+
+#resto-home .rest-desc p {
+    color: white;
+    font-size: 18px;
+}
+
+#facilities {
+    background: url(img/outdoor.jpeg) rgba(0, 0, 0, 0.75);
+    background-position: center;
+    background-repeat: no-repeat;
+    background-size: cover;
+    background-blend-mode:multiply;
+    background-attachment: fixed;
+}
+
+.client {
+    border: 1px solid #BE955B;
+    padding: 20px;
+    margin: 10px 0;
+    height: 300px;
+    background-color: #BE955B;
+    -webkit-box-shadow: 0px 0px 10px 5px rgba(190,149,91,1);
+    -moz-box-shadow: 0px 0px 10px 5px rgba(190,149,91,1);
+    box-shadow: 0px 0px 10px 5px rgba(190,149,91,1);
+}
+
+.client .btn-2 {
+    text-align: end;
+}
+
+.client h3 {
+    color: white;
+    font-size: 25px;
+}
+
+.client h4 {
+    font-size: 19px;
+}
+
+.client p {
+    font-size: 17px;
+}
+
+#facilities-about {
+    background: url('img/485429458.jpg') rgba(0, 0, 0, 0.35);
+    background-position: center;
+    background-repeat: no-repeat;
+    background-size: cover;
+    background-blend-mode:multiply;
+    background-attachment: fixed;
+}
+.about-dsc {
+    -webkit-box-shadow: inset 0px 0px 15px 5px rgba(128,118,128,1);
+    -moz-box-shadow: inset 0px 0px 15px 5px rgba(128,118,128,1);
+    box-shadow: inset 0px 0px 15px 5px rgba(128,118,128,1);
+    padding: 30px;
+}
+
+.faci p {
+    color: white;
+    font-size: 22px;
+    margin-top: 10px;
+}
+
+.contact-insta {
+    border: 1px solid #BE955B;
+    padding: 30px;
+    background-color: #BE955B;
+    height: 210px;
+    display: flex;
+    flex-direction: column;
+    text-align: center;
+    margin: 10px 0;
+
+}
+
+.contact-insta i {
+    font-size: 20px;
+    color: white;
+}
+
+.contact-insta a {
+    text-decoration: none;
+    color: white;
+    font-size: 25px;
+}
+
+.contact-info {
+    border: 1px solid #BE955B;
+    padding: 20px;
+    background-color: #BE955B;
+    height: 220px;
+    display: flex;
+    flex-direction: column;
+    text-align: center;
+    margin: 10px 0;
+}
+
+.contact-info i {
+    font-size:20px;
+    color: white;
+}
+
+.contact-info a {
+    text-decoration: none;
+    color: white;
+    font-size: 20px;
+}
+
+nav.stroke ul li a,
+nav.fill ul li a {
+  position: relative;
+}
+
+nav.stroke ul li a:after,
+nav.fill ul li a:after {
+  position: absolute;
+  bottom: 0;
+  left: 0;
+  right: 0;
+  margin: auto;
+  width: 0%;
+  content: '.';
+  color: transparent;
+  background: #BE955B;
+  height: 2px;
+}
+nav.stroke ul li a:hover:after {
+  width: 100%;
+}
+
+@media (max-width:767px) {
+    #about-home {
+        margin:20px 0!important;
+    }
+
+    .about-dsc {
+        margin: 20px 0;
+    }
+
+    .rooms-desc {
+        margin: 20px 0;
+    }
+
+    .rest-img {
+        margin: 10px 0;
+    }
+    
+    .faci {
+        margin: 20px 0;
+    }
+
+    .galery-img {
+        margin: 20px 0;
+    }
+
+    .contant-info i,a {
+        font-size: 15px!important;
+    }
+
+    .contact-info i, p {
+        font-size: 15px!important;
+    }
+}
+
+@media only screen and ( max-width:1200px) and (min-width:767px){
+
+    #testimonials .client {
+        height: 400px!important;
+    }
+
+    .contact-info i {
+        font-size: 15px;
+    }
+
+    .contact-info p {
+        font-size: 15px!important;
+    }
+
+    .contact-info a {
+        font-size: 15px!important;
+    }
+
+    .contact-info {
+        padding: 20px;
+    }
+}
+
